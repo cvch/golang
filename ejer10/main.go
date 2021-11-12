@@ -40,6 +40,14 @@ type hombre struct {
 
 type mujer struct {
 	hombre
+	// edad       int
+	// altura     float32
+	// peso       float32
+	// respirando bool
+	// pensando   bool
+	// comiendo   bool
+	// esHomre    bool
+	// vivo       bool
 }
 
 func (h *hombre) respirar() { h.respirando = true }
@@ -106,5 +114,6 @@ func main() {
 
 	fmt.Printf("Total carnivoros %d \n", totalCarnivoros)
 	fmt.Printf("Estoy vivo = %t \n", estoyVivo(Dogo))
+	fmt.Printf("Estoy vivo = %t \n", estoyVivo(Maria))
 
 }
