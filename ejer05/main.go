@@ -22,17 +22,17 @@ func main() {
 			break
 		}
 	}
-
+	println()
 	var iterator = 0
 
 	for iterator < 10 {
-		fmt.Printf("\n Valor de iterator: %d", iterator)
+		fmt.Printf("Valor de iterator: %d", iterator)
 		if iterator == 5 {
-			fmt.Printf("  Sumamos 1 \n")
+			fmt.Printf("  Sumamos 1\n")
 			iterator = iterator + 1
 			continue
 		}
-		fmt.Printf("   Entra aquí \n")
+		fmt.Printf("   Entra aquí\n")
 		iterator++
 	}
 
@@ -43,7 +43,7 @@ BLOQUE1:
 		fmt.Println("valor de ite: ", ite)
 		if ite == 5 {
 			ite = ite + 1
-			fmt.Println("Ite -1 y voy a BLOQUE1")
+			fmt.Println("Ite +1 y voy a BLOQUE1")
 			goto BLOQUE1
 		}
 		fmt.Println("Incremento en 1 a ite")

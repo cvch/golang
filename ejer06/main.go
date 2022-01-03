@@ -13,7 +13,10 @@ func main() {
 	_, aux2 = dos(7)
 	fmt.Println("valor de aux1 y de aux2 ", aux1, aux2)
 	fmt.Println(dos(7))
+	println("---calculo---")
 	fmt.Println(calculo(7, 1, 2, 3, 4, 5))
+	// arr := []int{7, 1, 2, 3, 4, 5} //lo mismo que lo anterior
+	// fmt.Println(calculo(arr...))
 }
 
 func uno(numero int) (z int) {
@@ -38,9 +41,9 @@ func calculo(numero ...int) int {
 	*/
 	for indice, num := range numero {
 		total = total + num
-		fmt.Printf("\n indice %d \n", indice)
-		fmt.Printf("\n num %d \n", num)
-		fmt.Printf("\n total %d \n", total)
+		fmt.Printf("indice %d \n", indice)
+		fmt.Printf("num %d \n", num)
+		fmt.Printf("total %d \n\n", total)
 	}
 	return total
 }

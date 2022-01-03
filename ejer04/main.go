@@ -19,6 +19,8 @@ func main() {
 	fmt.Println("La suma de los números es: ", number1+number2)
 	fmt.Println("Ingrese descripción: ")
 
+	// se puede hacer todo con este scanner y es mas rapido pero
+	// toca hacer todo manual, como el parseo a enteros, etc.
 	scanner := bufio.NewScanner(os.Stdin)
 	if scanner.Scan() {
 		text = scanner.Text()

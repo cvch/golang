@@ -5,9 +5,16 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+
+	_ "embed"
 )
 
+//go:embed archivo.txt
+var s string //esto solo se puede usar con la version 1.16 o mayor
+
 func main() {
+
+	println(s)
 	leoArchivo()
 	leoArchivo2()
 	graboArchivo()

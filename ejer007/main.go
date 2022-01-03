@@ -12,6 +12,7 @@ func main() {
 	fmt.Println(tabla)
 
 	tabla2 := [10]int{5, 6, 98, 1, 4, 0, 3, 54, 99, 11}
+	// tabla2 := [...]int{5, 6, 98, 1, 4, 0, 3, 54, 99, 11} // es lo mismo
 	fmt.Println(tabla2)
 
 	for i := 0; i < len(tabla2); i++ {
@@ -49,6 +50,8 @@ func variante3() {
 func variante4() {
 	// Si hacemos append sobre un slice
 	nums := make([]int, 0, 0)
+	// nums := make([]int, 0) si no se declara la capacidad entonces sera igual que la longitud
+
 	for i := 0; i < 9; i++ {
 		nums = append(nums, i)
 	}

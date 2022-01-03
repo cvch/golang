@@ -16,7 +16,7 @@ func main() {
 
 func bucle(canal1 chan time.Duration) {
 	inicio := time.Now()
-	for i := 0; i < 100000000000; i++ {
+	for i := 0; i < 10000000000; i++ {
 
 	}
 

@@ -7,9 +7,9 @@ var status bool
 func main() {
 	status = true
 	if status = false; status == true {
-		fmt.Println("estado: ", status)
+		fmt.Println("estado: true", status)
 	} else {
-		fmt.Println("estado: ", status)
+		fmt.Println("estado: false", status)
 	}
 
 	var number int
@@ -24,8 +24,20 @@ func main() {
 	switch numberCase := 5; numberCase {
 	case 1:
 		fmt.Println("1")
+		fallthrough
 	case 2:
 		fmt.Println("2")
+		fallthrough
+	default:
+		fmt.Println("Acción por defecto: ", numberCase)
+	}
+	switch numberCase := 5; {
+	case numberCase > 1:
+		fmt.Println("1")
+		fallthrough
+	case numberCase > 2:
+		fmt.Println("2")
+
 	default:
 		fmt.Println("Acción por defecto: ", numberCase)
 	}

@@ -12,7 +12,13 @@ func main() {
 
 	// se ejecuta siempre antes de salir de la función
 	defer f.Close()
-
+	// defer func() {
+	// 	// recover funcion que va y mira si ocurrio un panic
+	// 	r := recover()
+	// 	if r != nil {
+	// 		log.Fatalf("Ocurrió un error que generó un panic \n %v", r)
+	// 	}
+	// }()
 	if err != nil {
 		fmt.Println("Error abriendo el archivo")
 		//os.Exit(1)
@@ -22,6 +28,7 @@ func main() {
 }
 
 func ejemploPanic() {
+
 	defer func() {
 		// recover funcion que va y mira si ocurrio un panic
 		r := recover()

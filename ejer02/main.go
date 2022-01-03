@@ -1,6 +1,8 @@
 package main
 
 import (
+	"ejer02/example"
+	"encoding/json"
 	"fmt"
 	"strconv"
 )
@@ -24,6 +26,9 @@ func main() {
 	numero2, numero3, texto, estatus := 5, 4, "texto", true
 	fmt.Println(numero2, numero3, texto, estatus, moneda, flotante)
 	mostrarEstatus()
+	e := example.NewStruct(34, 56)
+	jsonE, _ := json.Marshal(e)
+	fmt.Println(string(jsonE))
 }
 
 func mostrarEstatus() {

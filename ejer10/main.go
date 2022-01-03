@@ -23,7 +23,7 @@ type animal interface {
 
 type vegetal interface {
 	ClasificacionVegetal() string
-	EstaVivo()
+	EstaVivo() bool
 }
 
 /* Genero Humano */

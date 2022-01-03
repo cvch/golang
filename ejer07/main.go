@@ -31,7 +31,11 @@ func main() {
 	for i := 1; i <= 10; i++ {
 		fmt.Println(MiTabla())
 	}
-
+	inputSimultion := []string{"esto", "es", "un", "texto", "de", "un", "archivo"}
+	myScanner := scannerSimulation(inputSimultion)
+	for i := 0; i < len(inputSimultion); i++ {
+		fmt.Println(myScanner())
+	}
 }
 
 func Operaciones() {
@@ -50,5 +54,14 @@ func Tabla(valor int) func() int {
 	return func() int {
 		secuencia += 1
 		return numero * secuencia
+	}
+}
+
+func scannerSimulation(input []string) func() string {
+	index := 0
+	return func() (text string) {
+		text = input[index]
+		index++
+		return
 	}
 }
