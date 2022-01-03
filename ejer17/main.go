@@ -8,6 +8,8 @@ los mismos tipos de variables
 */
 var result int
 
+type operation func(int, int) int
+
 func main() {
 	fmt.Println("inicio")
 
@@ -31,7 +33,7 @@ func multiplicar(a, b int) int {
 	return a * b
 }
 
-func operacionesMiddelware(funcion func(int, int) int) func(int, int) int {
+func operacionesMiddelware(funcion operation) operation {
 	return func(a, b int) int {
 		fmt.Println("Inicio de operación")
 		return funcion(a, b)
