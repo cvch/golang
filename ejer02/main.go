@@ -15,6 +15,10 @@ var estatus bool
 var numero8 int8
 var numero16 int16
 
+/*
+Realice un ejemplo dónde se muestre el manejo del alcance (publicas y privadas) de las variables en Go
+use una estructura
+*/
 func main() {
 	var moneda int = 87
 	// cast

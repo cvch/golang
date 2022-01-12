@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+/*
+Defina una función para cada una de las operaciones en un diccionario (agregar, borrar, existe?)
+función que retorne todas las llaves, otra que retorne los valores y otra que retorne valor dada la llave
+*/
 func main() {
 	//paises := make(map[string]string, 5) puedo reservar espacio
 

@@ -6,6 +6,9 @@ import (
 	"os"
 )
 
+/*
+Realizar un ejmplo de panic, recoverz y defer
+*/
 func main() {
 	archivo := "prueba.txt"
 	f, err := os.Open(archivo)

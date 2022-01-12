@@ -5,6 +5,9 @@ import (
 	"time"
 )
 
+/*
+Realizar un ejercicio que llame una función en paralelo y reciba el valor retornado por esta
+*/
 func main() {
 	canal1 := make(chan time.Duration)
 	go bucle(canal1)

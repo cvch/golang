@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/*
+Realice un ejercicio donde se muestre en comportamiento de un for, un while, do while y goto
+*/
 func main() {
 	i := 1
 	for i < 10 {

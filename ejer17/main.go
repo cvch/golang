@@ -3,13 +3,16 @@ package main
 import "fmt"
 
 /*
-Son interceptores que permiten ejecutar instrucciones comunes a varias funcioens que reciben y devuleven
+Son interceptores que permiten ejecutar instrucciones comunes a varias funciones que reciben y devuleven
 los mismos tipos de variables
 */
 var result int
 
 type operation func(int, int) int
 
+/*
+Realizar un ejemplo de interceptores en Go
+*/
 func main() {
 	fmt.Println("inicio")
 

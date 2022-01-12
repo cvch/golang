@@ -4,6 +4,10 @@ import "fmt"
 
 var status bool
 
+/*
+Realice un ejemplo de las estructuras de control if, else if, switch
+y el manejo de asiganciones antes de ejecutar la clausula
+*/
 func main() {
 	status = true
 	if status = false; status == true {

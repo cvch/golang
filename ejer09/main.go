@@ -1,5 +1,8 @@
 package main
 
+/*
+Definir una estructura que haga uso de la composición
+*/
 import (
 	"fmt"
 	"time"

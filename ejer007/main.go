@@ -5,6 +5,9 @@ import "fmt"
 var tabla [10]int
 var matriz [5][7]int
 
+/*
+Realizar una funcion en la cual se defina una matriz y se imprima el triangulo superior de la matriz.
+*/
 func main() {
 	tabla[0] = 1
 	tabla[5] = 15

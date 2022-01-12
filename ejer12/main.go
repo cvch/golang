@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/*
+Realice un ejemplo de recursividad
+*/
 func main() {
 	exponencia(2)
 }

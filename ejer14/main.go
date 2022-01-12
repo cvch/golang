@@ -11,6 +11,9 @@ var (
 	wg sync.WaitGroup
 )
 
+/*
+Realizar un ejemplo de paralelismo que llame a una función en un hilo y espere a que esta termine
+*/
 func main() {
 	// con decirle go ya me inicia asincronicamente la funcion
 

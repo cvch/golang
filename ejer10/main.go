@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/*
+Realizar un ejemplo de polimorfismo, usando interfaces estructuras y funciones
+*/
 type SerVivo interface {
 	EstaVivo() bool
 }

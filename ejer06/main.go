@@ -4,6 +4,11 @@ import (
 	"fmt"
 )
 
+/*
+Realice un jercicio donde se construya una función que reciba una numero y devuelva si es par o no
+otra donde reciba una n cantidad de números y los sume, y otra donde reciba un número y diga si es par o no
+y el doble de este número.
+*/
 func main() {
 	fmt.Println(uno(7))
 	fmt.Println(dos(1))

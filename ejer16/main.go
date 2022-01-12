@@ -2,6 +2,9 @@ package main
 
 import "net/http"
 
+/*
+Ejemplo de net/http
+*/
 func main() {
 	http.HandleFunc("/", home)
 	http.ListenAndServe(":3000", nil)

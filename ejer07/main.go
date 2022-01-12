@@ -8,6 +8,11 @@ var Calculo func(int, int) int = func(num1 int, num2 int) int {
 	return num1 + num2
 }
 
+/*
+Definir una variable que retorne una función que reciba dos enteros y devuelva un entero:
+realice una funcion que sume, reste, mult y divida y asignela a la variable declarada
+Realizar una función que utilice closures
+*/
 func main() {
 	fmt.Printf("Sumo 5 + 7 = %d \n", Calculo(5, 7))
 

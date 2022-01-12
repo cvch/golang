@@ -12,6 +12,9 @@ import (
 //go:embed archivo.txt
 var s string //esto solo se puede usar con la version 1.16 o mayor
 
+/*
+Realizar una funcion que lea y escriba un archivo.
+*/
 func main() {
 
 	println(s)

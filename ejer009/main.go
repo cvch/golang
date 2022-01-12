@@ -6,6 +6,9 @@ import (
 	"time"
 )
 
+/*
+Definir una estructura que haga uso de la composición usando modulos
+*/
 type pepe struct {
 	user.Usuario
 }

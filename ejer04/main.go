@@ -11,6 +11,9 @@ var number2 int
 var text string
 var result int
 
+/*
+Realice un ejercicio en consola dónde se lean dos numeros por teclado se sumen y luego se muestre su resultado
+*/
 func main() {
 	fmt.Println("Ingrese número 1: ")
 	fmt.Scanln(&number1)
